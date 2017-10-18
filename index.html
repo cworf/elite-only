@@ -12,40 +12,50 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <form id="personality">
-            <h4>Name</h4>
-            <div class="row">
-              <div class="col-lg-6">
-                <input id="f-name" type="text" class="form-control" placeholder="First name">
-              </div>
-              <div class="col-lg-6">
-                <input id="l-name" type="text" class="form-control" placeholder="Last name">
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">No Pressure...</h2>
+              <form id="personality">
+                <h4>Name</h4>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input id="f-name" type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col-lg-6">
+                    <input id="l-name" type="text" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+                <h4>Profession</h4>
+                <input id="prof" type="text" name="profession" placeholder="Profession">
+                <h4>Personality Type</h4>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <input type="radio" name="p-type" value="2">Type A</input>
+                  </div>
+                  <div class="col-lg-4">
+                    <input type="radio" name="p-type" value="1">Type B</input>
+                  </div>
+                  <div class="col-lg-4">
+                    <input type="radio" name="p-type" value="3">I dont know what this means</input>
+                  </div>
+                </div>
+                  <h4>Favorite Genre</h4>
+                  <select class="form-control" id="genre">
+                    <option value="50">EDM</option>
+                    <option value="20">Rock</option>
+                    <option value="2">Pop</option>
+                    <option value="4">Blues</option>
+                    <option value="0">Country</option>
+                    <option value="9">Classical</option>
+                    <option value="100">None</option>
+                  </select>
+                  <button type="submit" class="btn btn-primary" name="button">Submit</button>
+              </form>
             </div>
-            <h4>Profession</h4>
-            <input type="text" name="profession" placeholder="Profession">
-            <h4>Personality Type</h4>
-            <div class="row">
-              <div class="col-lg-6">
-                <input type="radio" name="p-type" value="2">Introvert</input>
-              </div>
-              <div class="col-lg-6">
-                <input type="radio" name="p-type" value="1">Extrovert</input>
-              </div>
+            <div class="card-footer" style="display:none">
+              <h4>Your Score:</h4>
             </div>
-            <div class="row">
-              <h4>Favorite Genre</h4>
-              <select class="form-control" id="genre">
-                <option value="50">EDM</option>
-                <option value="20">Rock</option>
-                <option value="2">Pop</option>
-                <option value="4">Blues</option>
-                <option value="0">Country</option>
-                <option value="9">Classical</option>
-                <option value="100">None</option>
-              </select>
-            </div>
-          </form>
+          </div>
         </div>
         <div class="col-md-8">
 
